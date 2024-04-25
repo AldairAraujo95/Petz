@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  petz:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: "password"
+      MYSQL_DATABASE: "petz"
+      MYSQL_USER: "root"
+      MYSQL_PASSWORD: "root"
+    ports:
+      - "3306:3306"
